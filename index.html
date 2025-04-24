@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <title>Currancy convertor App</title>
+</head>
+<body>
+    <div class="container">
+      <div class="app-container">
+        <h1>ConverTo</h1>
+        <form action="">
+            <div class="input-wrapper">
+                <input type="number">
+                
+            </div>
+            <div class="country-wrapper">
+                <div class="country-box from-country">
+                    <div class="the-box">
+                        <div class="flag">
+                            <img src="ae.png" alt="">
+                        </div>
+                        <select name="from-country" id="select">
+                            
+                        </select>
+                    </div>
+                    <h5 class="counrty-name">India</h5>
+                </div>
+                <i class="fa-solid fa-arrow-right-arrow-left"></i>
+                <div class="country-box from-country">
+                    <div class="the-box">
+                        <div class="flag"><img src="ae.png" alt=""></div>
+                        <select name="to-country" id="select">
+                            
+                        </select>
+                    </div>
+                    <h5 class="counrty-name">India</h5>
+                </div>
+            </div>
+        </form>
+        <button type="submit">Convert</button>
+        <div class="display-section">
+            <div class="converted-section">
+                <h4 class="converted-currency">0=0</h4>
+            </div>
+            <div class="exchange-rate">
+                <h3>Exchange Rate</h3>
+                <p><span class="exchg-value">0</span> <span class="exchg-currency"></span></p>
+            </div>
+        </div>
+      </div>
+    </div>
+    <script src="currency.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
