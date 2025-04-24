@@ -216,9 +216,9 @@ p{
 
 }
 
-@media screen and (max-width:500px) {
+@media (max-width:500px) {
     .app-container{
-        padding: 0rem;
+        padding: 0 !important;
     }
 }
 
