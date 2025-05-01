@@ -5,52 +5,51 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css">
-    <title>Currancy convertor App</title>
+    <title>ConGig</title>
 </head>
 <body>
     <div class="container">
-      <div class="app-container">
-        <h1>ConverTo</h1>
-        <form action="">
-            <div class="input-wrapper">
-                <input type="number">
+        <div class="app-container">
+            <h1>ConGig</h1>
+            <div class="input-section">
+                <input type="number" placeholder="Enter Amount">
+            </div>
+            <div class="country-section">
+                <div class="country-box">
+                    <div class="flag-wrap">
+                        <img src="IN.png" alt="">
+                        <select name="currency-from" id="currency-from">
+                           
+                        </select>
+                    </div>
+                    <h3 class="country-name">India</h3>
+                </div>
+                <i class="fa-solid fa-money-bill-transfer"></i>
+
+                <div class="country-box">
+                    <div class="flag-wrap">
+                        <img src="usa.png" alt="">
+                        <select name="currency-to" id="currency-from">
+                           
+                        </select>
+                    </div>
+                    <h3 class="country-name">USA</h3>
+                </div>
                 
             </div>
-            <div class="country-wrapper">
-                <div class="country-box from-country">
-                    <div class="the-box">
-                        <div class="flag">
-                            <img src="ae.png" alt="">
-                        </div>
-                        <select name="from-country" id="select">
-                            
-                        </select>
-                    </div>
-                    <h5 class="counrty-name">India</h5>
-                </div>
-                <i class="fa-solid fa-arrow-right-arrow-left"></i>
-                <div class="country-box from-country">
-                    <div class="the-box">
-                        <div class="flag"><img src="ae.png" alt=""></div>
-                        <select name="to-country" id="select">
-                            
-                        </select>
-                    </div>
-                    <h5 class="counrty-name">India</h5>
-                </div>
+            <div class="button-section">
+                <button>Click to Convert</button>
             </div>
-        </form>
-        <button type="submit">Convert</button>
-        <div class="display-section">
-            <div class="converted-section">
-                <h4 class="converted-currency">0=0</h4>
-            </div>
-            <div class="exchange-rate">
-                <h3>Exchange Rate</h3>
-                <p><span class="exchg-value">0</span> <span class="exchg-currency"></span></p>
+            <div class="display-section">
+                <div class="converted-output">
+                    <h4 class="output">100 INR = 1.17 USD</h4>
+                </div>
+                <div class="ex-rate">
+                    <h3>Exchange Rate</h3>
+                    <h5 class="ex-rate-show">0.012</h5>
+                </div>
             </div>
         </div>
-      </div>
     </div>
     <script src="currency.js"></script>
     <script src="script.js"></script>
