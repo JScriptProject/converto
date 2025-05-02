@@ -37,7 +37,7 @@ window.addEventListener("load", function(){
 // Select the values from dropdown on click and update the flag
 
 dropDown.forEach((select)=>{
-   select.addEventListener("click", (e)=>{
+   select.addEventListener("change", (e)=>{
     console.log(e.target);
     if(e.target.getAttribute("name")==="currency-from")
     {
